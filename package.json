@@ -15,7 +15,9 @@
     "bundle-css": "stylus -c -u nib style/main.styl -o app.css",
     "dev": "parallelshell 'npm run watch' 'npm run watch-style'",
     "watch": "budo src/app.js --live --host localhost -- -t babelify",
-    "watch-style": "stylus -c -u nib -w style/main.styl -o app.css"
+    "watch-style": "stylus -c -u nib -w style/main.styl -o app.css",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "license": "MIT",
   "dependencies": {
@@ -35,7 +37,8 @@
     "uglify-js": "^2.7.4",
     "uglifyify": "^3.0.4",
     "unassertify": "^2.0.3",
-    "xhr": "^2.3.2"
+    "xhr": "^2.3.2",
+    "snyk": "^1.189.0"
   },
   "browserify": {
     "transform": [
@@ -51,5 +54,6 @@
         }
       ]
     ]
-  }
+  },
+  "snyk": true
 }
