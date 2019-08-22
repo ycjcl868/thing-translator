@@ -33,7 +33,7 @@
     "parallelshell": "^3.0.1",
     "stylus": "^0.54.5",
     "uglify-js": "^2.7.4",
-    "uglifyify": "^3.0.4",
+    "uglifyify": "^5.0.2",
     "unassertify": "^2.0.3",
     "xhr": "^2.3.2"
   },
